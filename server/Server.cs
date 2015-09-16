@@ -45,10 +45,9 @@ namespace Seyyedi.RemoteMpc
 			_nancy = new NancyHost(_uris);
 			_nancy.Start();
 
-			Console.WriteLine("Running server at {0}", _uris
+			Console.WriteLine("Running server at {0}", string.Join(", ", _uris
 				.Select(u => u.ToString())
-				.Join(", ")
-			);
+			));
 
 			Console.ReadLine();
 

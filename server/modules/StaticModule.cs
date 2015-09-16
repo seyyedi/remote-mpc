@@ -50,10 +50,10 @@ namespace Seyyedi.RemoteMpc
 			Get["/js/all.js"] = p =>
 			{
 				return Response.AsText(
-					Directory
+					string.Join("\n\n", Directory
 						.GetFiles(Path.Combine(config.Html5, "js"), "*.js")
 						.Select(f => File.ReadAllText(f))
-						.Join("\n\n"),
+					),
 					"application/x-javascript"
 				);
 			};

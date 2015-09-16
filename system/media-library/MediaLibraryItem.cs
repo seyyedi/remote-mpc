@@ -29,10 +29,10 @@ namespace Seyyedi.RemoteMpc
 
 		public void Rename(string name)
 		{
-			var invalidPathChars = Utils
-				.Concat(
-					System.IO.Path.GetInvalidPathChars(),
-					System.IO.Path.GetInvalidFileNameChars()
+			var invalidPathChars = System.IO.Path
+				.GetInvalidPathChars()
+				.Concat(System.IO.Path
+					.GetInvalidFileNameChars()
 				)
 				.ToArray();
 

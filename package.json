@@ -1,0 +1,11 @@
+{
+  "name": "seyyedi.remote-mpc",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "author": "Nino Seyyedi",
+  "dependencies": {
+    "del": "^2.0.2",
+    "gulp": "^3.9.0"
+  }
+}

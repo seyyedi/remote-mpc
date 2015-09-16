@@ -159,10 +159,10 @@ namespace Seyyedi.RemoteMpc
 								//path = i.Path,
 								tags = i.AllTags
 							}),
-						tags = Utils
-							.Concat(
-								library.Directories.SelectMany(d => d.Tags),
-								library.Items.SelectMany(i => i.Tags)
+						tags = library.Directories
+							.SelectMany(d => d.Tags)
+							.Concat(library.Items
+								.SelectMany(i => i.Tags)
 							)
 							.Distinct()
 							.OrderBy(t => t)
@@ -188,7 +188,8 @@ namespace Seyyedi.RemoteMpc
 					{
 						extended = new
 						{
-							groups = Utils.GetFiles(itemDirectory)
+							groups = itemDirectory
+								.EnumerateFilesRecursive()
 								.Where(f => MediaLibrary.MediaExtensions.Contains(f.Extension.ToLower()))
 								.GroupBy(f => f.Directory.FullName.Substring(itemDirectory.FullName.Length).TrimStart(Path.DirectorySeparatorChar))
 								.OrderBy(g => g.Key)
