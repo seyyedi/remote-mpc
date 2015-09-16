@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seyyedi.RemoteMpc", "Seyyedi.RemoteMpc.csproj", "{C3F3853F-0023-4F23-82BA-3920E4F2AC4E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C49A0A71-83C3-4E0F-886F-CB1F74187D61} = {C49A0A71-83C3-4E0F-886F-CB1F74187D61}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seyyedi", "..\Seyyedi\Seyyedi.csproj", "{C49A0A71-83C3-4E0F-886F-CB1F74187D61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Signed|Any CPU = Signed|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3F3853F-0023-4F23-82BA-3920E4F2AC4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3F3853F-0023-4F23-82BA-3920E4F2AC4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3F3853F-0023-4F23-82BA-3920E4F2AC4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3F3853F-0023-4F23-82BA-3920E4F2AC4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3F3853F-0023-4F23-82BA-3920E4F2AC4E}.Signed|Any CPU.ActiveCfg = Release|Any CPU
+		{C3F3853F-0023-4F23-82BA-3920E4F2AC4E}.Signed|Any CPU.Build.0 = Release|Any CPU
+		{C49A0A71-83C3-4E0F-886F-CB1F74187D61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C49A0A71-83C3-4E0F-886F-CB1F74187D61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C49A0A71-83C3-4E0F-886F-CB1F74187D61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C49A0A71-83C3-4E0F-886F-CB1F74187D61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C49A0A71-83C3-4E0F-886F-CB1F74187D61}.Signed|Any CPU.ActiveCfg = Release|Any CPU
+		{C49A0A71-83C3-4E0F-886F-CB1F74187D61}.Signed|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
