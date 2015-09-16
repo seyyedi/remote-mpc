@@ -6,6 +6,7 @@
   "author": "Nino Seyyedi",
   "dependencies": {
     "del": "^2.0.2",
-    "gulp": "^3.9.0"
+    "gulp": "^3.9.0",
+    "gulp-zip": "^3.0.2"
   }
 }
